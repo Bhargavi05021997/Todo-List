@@ -1,0 +1,17 @@
+<div class="mt-2">
+    <ul class="list-unstyled">
+        <li><button (click)="onButtonClick($event)" name="all" class="btn btn-link">All [<span>{{AllCount}}</span>]</button></li>
+        <li><button (click)="onButtonClick($event)" name="electronics"class="btn btn-link">Electronics[<span>{{ElectronicsCount}}</span>]</button></li>
+        <li><button (click)="onButtonClick($event)" name="jewelery"class="btn btn-link">Jewelery[<span>{{JeweleryCount}}</span>]</button></li>
+        <li><button (click)="onButtonClick($event)" name="men's clothing"class="btn btn-link">Men's Clothing[<span>{{MensCount}}</span>]</button></li>
+        <li><button (click)="onButtonClick($event)" name="women's clothing"class="btn btn-link">Women's Clothing[<span>{{WomensCount}}</span>]</button></li>
+    </ul>
+    <h2>Select Category</h2>
+    <select class="form-select">
+    <option><button (click)="onChangedClick($event)" name="all" class="btn btn-link"></button>All</option>
+    <option><button (click)="onChangedClick($event)" name="electronics" class="btn btn-link"></button>Electronics</option>
+    <option><button (click)="onChangedClick($event)" name="jewelery" class="btn btn-link"></button>Jewelery</option>
+    <option><button (click)="onChangedClick($event)" name="men,s clothing" class="btn btn-link"></button>Men's Clothing</option>
+    <option><button (click)="onChangedClick($event)" name="women,s clothing" class="btn btn-link"></button>Women's Clothing</option>
+    </select>
+</div>
