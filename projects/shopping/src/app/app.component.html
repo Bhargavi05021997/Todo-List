@@ -1,5 +1,6 @@
 <div class="container">
 <h2>ToDoList</h2>
+<div>
 <input type="text" placeholder="enter task name" #task/>
 <br>
 <br>
@@ -9,5 +10,9 @@
 <ul *ngFor="let item of list; let i=index">
     <li>{{item.name}} <button (click)="deleteTask(i)">Delete</button></li>
 </ul>
-
+</div>
+<div>
+    <h2>Call Api in Angular</h2>
+    <p *ngFor="let item of Users">Name:{{item.name}} ,    City:{{item.city}}</p>
+</div>
 </div>
