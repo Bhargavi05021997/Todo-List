@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'shopping';
   list:any[] = [];
   Users:any[] = [];
+  Forms:any[] = [{}];
  
   addTask(item:string){
     this.list.push({name: item});
@@ -21,5 +22,6 @@ export class AppComponent {
 constructor(private data:UserService){}
 ngOnInit():void{
     this.data.GetUsers().subscribe(user=>this.Users=user);
+    this.data.GetForms().subscribe(form=>this.Forms=form);
   }
 }
